@@ -8,7 +8,7 @@ export default function App() {
   return (
     <ApplicationProvider {...eva} theme={eva.dark}>
       <Layout style={styles.container}>
-        <Text>I know what to change now!)</Text>
+        <Text>I know what to change no</Text>
         <StatusBar style="auto" />
       </Layout>
     </ApplicationProvider>
