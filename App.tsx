@@ -6,10 +6,12 @@ import { createBottomTabNavigator, BottomTabBarProps } from '@react-navigation/b
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { ImageProps } from 'react-native';
 import { RenderProp } from '@ui-kitten/components/devsupport';
+import DuckImage from './src/components/Images/DuckImage';
 
 const DuckScreen = () => (
   <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text category='h1'>Duck goes here</Text>
+    <Text category="h1">Talk to me</Text>
+    <DuckImage/>
   </Layout>
 );
 
@@ -26,7 +28,6 @@ const BirdIcon: RenderProp<Partial<ImageProps>> = (props) => (
 const InfoIcon: RenderProp<Partial<ImageProps>>  = (props) => (
   <Icon {...props} name='info-outline'/>
 );
-
 
 const BottomTabBar: React.FC<BottomTabBarProps> = ({ navigation, state }) => (
   <BottomNavigation
